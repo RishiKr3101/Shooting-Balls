@@ -13,10 +13,10 @@ public class SpawnEnemies : MonoBehaviour
     {
 
         Vector3 currentPosition = spriteToDuplicate.transform.position;
-        for (int i = 0; i < 150; i++)
+        for (int i = 0; i < 300; i++)
         {
             GameObject tmpObj = GameObject.Instantiate(spriteToDuplicate, currentPosition, Quaternion.identity) as GameObject;
-            currentPosition = new Vector3(Random.Range(-99, 99), Random.Range(-1, 38), 0);
+            currentPosition = new Vector3(Random.Range(-100, 100), Random.Range(-1, 40), 0);
         }
     }
 
